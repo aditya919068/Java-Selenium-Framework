@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Aditya Automation">
+
+
+<test thread-count="5" name="Aditya Test">
+<classes>
+<class name="com.travels.qa.testcases.Account_Testcase"></class>
+<class name="com.travels.qa.testcases.Blog_Testcase"></class>
+<class name="com.travels.qa.testcases.Cars_Testcase"></class>
+<class name="com.travels.qa.testcases.CarsBooking_Testcase"></class>
+<class name="com.travels.qa.testcases.CarsConfirmation_Testcase"></class>
+<class name="com.travels.qa.testcases.CarsInvoice_Testcase"></class>
+<class name="com.travels.qa.testcases.HomePage_Testcase"></class>
+<class name="com.travels.qa.testcases.HotelBooking_Testcase"></class>
+<class name="com.travels.qa.testcases.HotelConfirmation_Testcase"></class>
+<class name="com.travels.qa.testcases.HotelInvoice_Testcase"></class>
+<class name="com.travels.qa.testcases.Hotels_Testcase"></class>
+<class name="com.travels.qa.testcases.Login_Testcase"></class>
+<class name="com.travels.qa.testcases.Offers_Testcase"></class>
+<class name="com.travels.qa.testcases.SignUpPage_Testcase"></class>
+<class name="com.travels.qa.testcases.Tour_Testcase"></class>
+<class name="com.travels.qa.testcases.TourBooking_Testcase"></class>
+<class name="com.travels.qa.testcases.TourConfirmation_Testcase"></class>
+<class name="com.travels.qa.testcases.TourInvoice_Testcase"></class>
+</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

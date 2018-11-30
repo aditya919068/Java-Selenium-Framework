@@ -1,0 +1,1459 @@
+<html>
+<head>
+<title>TestNG:  Aditya Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Aditya Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>84/3/5</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 29 12:44:03 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>2096 seconds (2096316 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.setup()'><b>setup</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49421}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: e9451c0e6c1840ae98952d334871f556
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.HomePage_Testcase.setup(HomePage_Testcase.java:34)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1648272047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1648272047'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49421}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: e9451c0e6c1840ae98952d334871f556
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.HomePage_Testcase.setup(HomePage_Testcase.java:34)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Hotels_Testcase.setup()'><b>setup</b><br>Test class: com.travels.qa.testcases.Hotels_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51443}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: b0b098dd6b1751701559c2be6d2df903
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Hotels_Testcase.setup(Hotels_Testcase.java:31)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1228789687", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1228789687'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51443}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: b0b098dd6b1751701559c2be6d2df903
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Hotels_Testcase.setup(Hotels_Testcase.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>com.travels.qa.testcases.Hotels_Testcase@59494225</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Tour_Testcase.setup()'><b>setup</b><br>Test class: com.travels.qa.testcases.Tour_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52993}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 4930107c2a8b8df8dd4c37fc15f781cc
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Tour_Testcase.setup(Tour_Testcase.java:29)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1962204185", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1962204185'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52993}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 4930107c2a8b8df8dd4c37fc15f781cc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Tour_Testcase.setup(Tour_Testcase.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>23</td>
+<td>com.travels.qa.testcases.Tour_Testcase@13805618</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.setup()'><b>setup</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Tour_Testcase.setup()'><b>setup</b><br>Test class: com.travels.qa.testcases.Tour_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Tour_Testcase@13805618</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.teardown()'><b>teardown</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.getResult()'><b>getResult</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.teardown()'><b>teardown</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.getResult()'><b>getResult</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Hotels_Testcase.teardown()'><b>teardown</b><br>Test class: com.travels.qa.testcases.Hotels_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Hotels_Testcase@59494225</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Hotels_Testcase.getResult()'><b>getResult</b><br>Test class: com.travels.qa.testcases.Hotels_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Hotels_Testcase@59494225</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Tour_Testcase.teardown()'><b>teardown</b><br>Test class: com.travels.qa.testcases.Tour_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Tour_Testcase@13805618</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Tour_Testcase.getResult()'><b>getResult</b><br>Test class: com.travels.qa.testcases.Tour_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Tour_Testcase@13805618</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Tour_Testcase.teardown()'><b>teardown</b><br>Test class: com.travels.qa.testcases.Tour_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Tour_Testcase@13805618</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Tour_Testcase.getResult()'><b>getResult</b><br>Test class: com.travels.qa.testcases.Tour_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Tour_Testcase@13805618</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelBooking_Testcase.Booking_Modification()'><b>Booking_Modification</b><br>Test class: com.travels.qa.testcases.HotelBooking_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49493}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 4e72e5299ea23ff69d3b3832a2d1c123
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.travels.qa.pages.HotelBookingPage.Updating_Hotel_Confirmation(HotelBookingPage.java:105)
+	at com.travels.qa.testcases.HotelBooking_Testcase.Booking_Modification(HotelBooking_Testcase.java:46)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace530657903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace530657903'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49493}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 4e72e5299ea23ff69d3b3832a2d1c123
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.travels.qa.pages.HotelBookingPage.Updating_Hotel_Confirmation(HotelBookingPage.java:105)
+	at com.travels.qa.testcases.HotelBooking_Testcase.Booking_Modification(HotelBooking_Testcase.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>30</td>
+<td>com.travels.qa.testcases.HotelBooking_Testcase@27c20538</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.CarsConfirmation_Testcase.booking_as_a_guest()'><b>booking_as_a_guest</b><br>Test class: com.travels.qa.testcases.CarsConfirmation_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63808}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 1d8db394ff6763e4355982c9300ff60e
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.travels.qa.pages.CarsPage.Cars_Booking(CarsPage.java:36)
+	at com.travels.qa.testcases.CarsConfirmation_Testcase.booking_as_a_guest(CarsConfirmation_Testcase.java:47)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1397967893", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1397967893'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63808}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 1d8db394ff6763e4355982c9300ff60e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.travels.qa.pages.CarsPage.Cars_Booking(CarsPage.java:36)
+	at com.travels.qa.testcases.CarsConfirmation_Testcase.booking_as_a_guest(CarsConfirmation_Testcase.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>com.travels.qa.testcases.CarsConfirmation_Testcase@1e397ed7</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.TourInvoice_Testcase.payment_on_arrival_when_SignedUp()'><b>payment_on_arrival_when_SignedUp</b><br>Test class: com.travels.qa.testcases.TourInvoice_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54143}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: b858ce3815cda4dfe341526c4355930e
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.travels.qa.utility.Testutility.MyAccountDropDown(Testutility.java:26)
+	at com.travels.qa.pages.HomePage.Signup(HomePage.java:144)
+	at com.travels.qa.testcases.TourInvoice_Testcase.payment_on_arrival_when_SignedUp(TourInvoice_Testcase.java:90)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace982751931", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace982751931'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:54143}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: b858ce3815cda4dfe341526c4355930e
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at com.travels.qa.utility.Testutility.MyAccountDropDown(Testutility.java:26)
+	at com.travels.qa.pages.HomePage.Signup(HomePage.java:144)
+	at com.travels.qa.testcases.TourInvoice_Testcase.payment_on_arrival_when_SignedUp(TourInvoice_Testcase.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.travels.qa.testcases.TourInvoice_Testcase@1ed4004b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.travels.qa.testcases.Hotels_Testcase.Amenities_Checkbox_Filter()'><b>Amenities_Checkbox_Filter</b><br>Test class: com.travels.qa.testcases.Hotels_Testcase</td>
+<td></td>
+<td>5</td>
+<td>com.travels.qa.testcases.Hotels_Testcase@59494225</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.AppStoreButton_navigates_to_ConnectingToAppStore()'><b>AppStoreButton_navigates_to_ConnectingToAppStore</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>6</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Booking_Cars_for_User()'><b>Booking_Cars_for_User</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>3</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Booking_Hotels_for_User()'><b>Booking_Hotels_for_User</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>3</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Booking_Tour_for_User()'><b>Booking_Tour_for_User</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>3</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Booking_Visa_for_User()'><b>Booking_Visa_for_User</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>5</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Cars_Testcase.Cars_Checkbox_Filter()'><b>Cars_Checkbox_Filter</b><br>Test class: com.travels.qa.testcases.Cars_Testcase</td>
+<td></td>
+<td>5</td>
+<td>com.travels.qa.testcases.Cars_Testcase@31a5c39e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Cars_Testcase.Cars_Filter()'><b>Cars_Filter</b><br>Test class: com.travels.qa.testcases.Cars_Testcase</td>
+<td></td>
+<td>5</td>
+<td>com.travels.qa.testcases.Cars_Testcase@31a5c39e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Tour_Testcase.Cars_Radiobutton_Filter()'><b>Cars_Radiobutton_Filter</b><br>Test class: com.travels.qa.testcases.Tour_Testcase</td>
+<td></td>
+<td>5</td>
+<td>com.travels.qa.testcases.Tour_Testcase@13805618</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Cars_placard_handling()'><b>Cars_placard_handling</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>5</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_HomeButton_Click_Helps_To_Land_On_HomeScreen()'><b>Checking_HomeButton_Click_Helps_To_Land_On_HomeScreen</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_Logo_Click_Helps_To_Land_On_HomeScreen()'><b>Checking_Logo_Click_Helps_To_Land_On_HomeScreen</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>4</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_Presence_Of_Currency_In_The_List()'><b>Checking_Presence_Of_Currency_In_The_List</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>1</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_Presence_Of_Email_Address()'><b>Checking_Presence_Of_Email_Address</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_Presence_Of_Language_In_The_List()'><b>Checking_Presence_Of_Language_In_The_List</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_Presence_Of_Logo()'><b>Checking_Presence_Of_Logo</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_Presence_Of_PhoneNumber()'><b>Checking_Presence_Of_PhoneNumber</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_the_Text_Of_the_Blogbutton()'><b>Checking_the_Text_Of_the_Blogbutton</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_the_Text_Of_the_Homebutton()'><b>Checking_the_Text_Of_the_Homebutton</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Checking_the_Text_Of_the_Offersbutton()'><b>Checking_the_Text_Of_the_Offersbutton</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Clicking_the_BlogButton_Navigates_to_Blog_Page()'><b>Clicking_the_BlogButton_Navigates_to_Blog_Page</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Clicking_the_OffersButton_Navigates_to_Offers_Page()'><b>Clicking_the_OffersButton_Navigates_to_Offers_Page</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Clicking_the_Subscription_Button()'><b>Clicking_the_Subscription_Button</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>3</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Clicking_the_Subscription_Button_If_User_Already_Exists()'><b>Clicking_the_Subscription_Button_If_User_Already_Exists</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>8</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Blog_Testcase.Content_on_the_page()'><b>Content_on_the_page</b><br>Test class: com.travels.qa.testcases.Blog_Testcase</td>
+<td></td>
+<td>39</td>
+<td>com.travels.qa.testcases.Blog_Testcase@5f2108b5</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Blog_Testcase.Content_through_searchbar()'><b>Content_through_searchbar</b><br>Test class: com.travels.qa.testcases.Blog_Testcase</td>
+<td></td>
+<td>4</td>
+<td>com.travels.qa.testcases.Blog_Testcase@5f2108b5</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.TourBooking_Testcase.Date_Change_Of_the_Tour()'><b>Date_Change_Of_the_Tour</b><br>Test class: com.travels.qa.testcases.TourBooking_Testcase</td>
+<td></td>
+<td>15</td>
+<td>com.travels.qa.testcases.TourBooking_Testcase@56ef9176</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Account_Testcase.Details_Entry_Of_Users_Profile()'><b>Details_Entry_Of_Users_Profile</b><br>Test class: com.travels.qa.testcases.Account_Testcase</td>
+<td></td>
+<td>7</td>
+<td>com.travels.qa.testcases.Account_Testcase@e45f292</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Login_Testcase.Error_Message_On_login_click_if_both_textfields_are_empty()'><b>Error_Message_On_login_click_if_both_textfields_are_empty</b><br>Test class: com.travels.qa.testcases.Login_Testcase</td>
+<td></td>
+<td>1</td>
+<td>com.travels.qa.testcases.Login_Testcase@6e1567f1</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Login_Testcase.Error_Message_On_login_click_if_both_textfields_are_entered_not_present_In_Database()'><b>Error_Message_On_login_click_if_both_textfields_are_entered_not_present_In_Database</b><br>Test class: com.travels.qa.testcases.Login_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.Login_Testcase@6e1567f1</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Filling_the_Form_Of_SignUp()'><b>Filling_the_Form_Of_SignUp</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>3</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.GooglePlayButton_navigates_to_GooglePlayStore()'><b>GooglePlayButton_navigates_to_GooglePlayStore</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>10</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Hotels_Testcase.Hotels_Filter()'><b>Hotels_Filter</b><br>Test class: com.travels.qa.testcases.Hotels_Testcase</td>
+<td></td>
+<td>4</td>
+<td>com.travels.qa.testcases.Hotels_Testcase@59494225</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.CarsInvoice_Testcase.Invoice_Visibility()'><b>Invoice_Visibility</b><br>Test class: com.travels.qa.testcases.CarsInvoice_Testcase</td>
+<td></td>
+<td>19</td>
+<td>com.travels.qa.testcases.CarsInvoice_Testcase@490ab905</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelInvoice_Testcase.Invoice_Visibility()'><b>Invoice_Visibility</b><br>Test class: com.travels.qa.testcases.HotelInvoice_Testcase</td>
+<td></td>
+<td>20</td>
+<td>com.travels.qa.testcases.HotelInvoice_Testcase@6e06451e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.TourInvoice_Testcase.Invoice_Visibility()'><b>Invoice_Visibility</b><br>Test class: com.travels.qa.testcases.TourInvoice_Testcase</td>
+<td></td>
+<td>20</td>
+<td>com.travels.qa.testcases.TourInvoice_Testcase@1ed4004b</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Account_Testcase.Logo_Click_Navigates_to_Homescreen()'><b>Logo_Click_Navigates_to_Homescreen</b><br>Test class: com.travels.qa.testcases.Account_Testcase</td>
+<td></td>
+<td>6</td>
+<td>com.travels.qa.testcases.Account_Testcase@e45f292</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Matching_the_Actual_with_Expected_errors_if_confirmpassword_is_Entered()'><b>Matching_the_Actual_with_Expected_errors_if_confirmpassword_is_Entered</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Matching_the_Actual_with_Expected_errors_if_email_is_Entered()'><b>Matching_the_Actual_with_Expected_errors_if_email_is_Entered</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Matching_the_Actual_with_Expected_errors_if_firstname_is_Entered()'><b>Matching_the_Actual_with_Expected_errors_if_firstname_is_Entered</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Matching_the_Actual_with_Expected_errors_if_lastname_is_Entered()'><b>Matching_the_Actual_with_Expected_errors_if_lastname_is_Entered</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>3</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Matching_the_Actual_with_Expected_errors_if_matched_confirmpassword_and_Password_is_Entered()'><b>Matching_the_Actual_with_Expected_errors_if_matched_confirmpassword_and_Password_is_Entered</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Matching_the_Actual_with_Expected_errors_if_mismatched_confirmpassword_and_Password_is_Entered()'><b>Matching_the_Actual_with_Expected_errors_if_mismatched_confirmpassword_and_Password_is_Entered</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Matching_the_Actual_with_Expected_errors_if_no_textfield_is_Entered()'><b>Matching_the_Actual_with_Expected_errors_if_no_textfield_is_Entered</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Matching_the_Actual_with_Expected_errors_if_password_is_Entered()'><b>Matching_the_Actual_with_Expected_errors_if_password_is_Entered</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Cars_Testcase.Navigating_to_Cars_booking()'><b>Navigating_to_Cars_booking</b><br>Test class: com.travels.qa.testcases.Cars_Testcase</td>
+<td></td>
+<td>12</td>
+<td>com.travels.qa.testcases.Cars_Testcase@31a5c39e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Hotels_Testcase.Navigating_to_Hotel_booking()'><b>Navigating_to_Hotel_booking</b><br>Test class: com.travels.qa.testcases.Hotels_Testcase</td>
+<td></td>
+<td>13</td>
+<td>com.travels.qa.testcases.Hotels_Testcase@59494225</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Blog_Testcase.No_Content_through_searchbar()'><b>No_Content_through_searchbar</b><br>Test class: com.travels.qa.testcases.Blog_Testcase</td>
+<td></td>
+<td>3</td>
+<td>com.travels.qa.testcases.Blog_Testcase@5f2108b5</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Offers_Testcase.Offer_acceptance()'><b>Offer_acceptance</b><br>Test class: com.travels.qa.testcases.Offers_Testcase</td>
+<td></td>
+<td>6</td>
+<td>com.travels.qa.testcases.Offers_Testcase@5cb9f472</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Offers_Testcase.Offer_reading()'><b>Offer_reading</b><br>Test class: com.travels.qa.testcases.Offers_Testcase</td>
+<td></td>
+<td>16</td>
+<td>com.travels.qa.testcases.Offers_Testcase@5cb9f472</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelBooking_Testcase.RoomAvailability_Details()'><b>RoomAvailability_Details</b><br>Test class: com.travels.qa.testcases.HotelBooking_Testcase</td>
+<td></td>
+<td>13</td>
+<td>com.travels.qa.testcases.HotelBooking_Testcase@27c20538</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelBooking_Testcase.Room_Details()'><b>Room_Details</b><br>Test class: com.travels.qa.testcases.HotelBooking_Testcase</td>
+<td></td>
+<td>14</td>
+<td>com.travels.qa.testcases.HotelBooking_Testcase@27c20538</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelBooking_Testcase.Room_Selection()'><b>Room_Selection</b><br>Test class: com.travels.qa.testcases.HotelBooking_Testcase</td>
+<td></td>
+<td>19</td>
+<td>com.travels.qa.testcases.HotelBooking_Testcase@27c20538</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Blog_Testcase.Side_menu_of_blog()'><b>Side_menu_of_blog</b><br>Test class: com.travels.qa.testcases.Blog_Testcase</td>
+<td></td>
+<td>7</td>
+<td>com.travels.qa.testcases.Blog_Testcase@5f2108b5</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Login_Testcase.Signup_through_login_page()'><b>Signup_through_login_page</b><br>Test class: com.travels.qa.testcases.Login_Testcase</td>
+<td></td>
+<td>4</td>
+<td>com.travels.qa.testcases.Login_Testcase@6e1567f1</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Login_Testcase.Signup_through_login_page_and_logout()'><b>Signup_through_login_page_and_logout</b><br>Test class: com.travels.qa.testcases.Login_Testcase</td>
+<td></td>
+<td>6</td>
+<td>com.travels.qa.testcases.Login_Testcase@6e1567f1</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Success_Upon_Clicking_Login_Link()'><b>Success_Upon_Clicking_Login_Link</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>1</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Success_Upon_Clicking_Signup_Link()'><b>Success_Upon_Clicking_Signup_Link</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>1</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Login_Testcase.Text_Inside_The_TextBoxes()'><b>Text_Inside_The_TextBoxes</b><br>Test class: com.travels.qa.testcases.Login_Testcase</td>
+<td></td>
+<td>3</td>
+<td>com.travels.qa.testcases.Login_Testcase@6e1567f1</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Text_Inside_The_TextBoxes()'><b>Text_Inside_The_TextBoxes</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>1</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Text_Of_The_DropDown()'><b>Text_Of_The_DropDown</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.SignUpPage_Testcase.Title_Of_The_TextBoxes()'><b>Title_Of_The_TextBoxes</b><br>Test class: com.travels.qa.testcases.SignUpPage_Testcase</td>
+<td></td>
+<td>1</td>
+<td>com.travels.qa.testcases.SignUpPage_Testcase@cb644e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.Tour_placard_handling()'><b>Tour_placard_handling</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td></td>
+<td>6</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Login_Testcase.Verifying_text_field_titles()'><b>Verifying_text_field_titles</b><br>Test class: com.travels.qa.testcases.Login_Testcase</td>
+<td></td>
+<td>2</td>
+<td>com.travels.qa.testcases.Login_Testcase@6e1567f1</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelBooking_Testcase.Wishlisting_hotel()'><b>Wishlisting_hotel</b><br>Test class: com.travels.qa.testcases.HotelBooking_Testcase</td>
+<td></td>
+<td>17</td>
+<td>com.travels.qa.testcases.HotelBooking_Testcase@27c20538</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelBooking_Testcase.Writing_Room_Review()'><b>Writing_Room_Review</b><br>Test class: com.travels.qa.testcases.HotelBooking_Testcase</td>
+<td></td>
+<td>14</td>
+<td>com.travels.qa.testcases.HotelBooking_Testcase@27c20538</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.CarsConfirmation_Testcase.book_with_invalid_user()'><b>book_with_invalid_user</b><br>Test class: com.travels.qa.testcases.CarsConfirmation_Testcase</td>
+<td></td>
+<td>14</td>
+<td>com.travels.qa.testcases.CarsConfirmation_Testcase@1e397ed7</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelConfirmation_Testcase.book_with_invalid_user()'><b>book_with_invalid_user</b><br>Test class: com.travels.qa.testcases.HotelConfirmation_Testcase</td>
+<td></td>
+<td>17</td>
+<td>com.travels.qa.testcases.HotelConfirmation_Testcase@72d818d1</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.TourConfirmation_Testcase.book_with_invalid_user()'><b>book_with_invalid_user</b><br>Test class: com.travels.qa.testcases.TourConfirmation_Testcase</td>
+<td></td>
+<td>16</td>
+<td>com.travels.qa.testcases.TourConfirmation_Testcase@4566e5bd</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelConfirmation_Testcase.booking_as_a_guest()'><b>booking_as_a_guest</b><br>Test class: com.travels.qa.testcases.HotelConfirmation_Testcase</td>
+<td></td>
+<td>19</td>
+<td>com.travels.qa.testcases.HotelConfirmation_Testcase@72d818d1</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.TourConfirmation_Testcase.booking_as_a_guest()'><b>booking_as_a_guest</b><br>Test class: com.travels.qa.testcases.TourConfirmation_Testcase</td>
+<td></td>
+<td>19</td>
+<td>com.travels.qa.testcases.TourConfirmation_Testcase@4566e5bd</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.CarsBooking_Testcase.booking_car()'><b>booking_car</b><br>Test class: com.travels.qa.testcases.CarsBooking_Testcase</td>
+<td></td>
+<td>12</td>
+<td>com.travels.qa.testcases.CarsBooking_Testcase@3f49dace</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.TourBooking_Testcase.booking_tour()'><b>booking_tour</b><br>Test class: com.travels.qa.testcases.TourBooking_Testcase</td>
+<td></td>
+<td>11</td>
+<td>com.travels.qa.testcases.TourBooking_Testcase@56ef9176</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.CarsConfirmation_Testcase.make_a_note_while_ordering()'><b>make_a_note_while_ordering</b><br>Test class: com.travels.qa.testcases.CarsConfirmation_Testcase</td>
+<td></td>
+<td>20</td>
+<td>com.travels.qa.testcases.CarsConfirmation_Testcase@1e397ed7</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelConfirmation_Testcase.make_a_note_while_ordering()'><b>make_a_note_while_ordering</b><br>Test class: com.travels.qa.testcases.HotelConfirmation_Testcase</td>
+<td></td>
+<td>23</td>
+<td>com.travels.qa.testcases.HotelConfirmation_Testcase@72d818d1</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.TourConfirmation_Testcase.make_a_note_while_ordering()'><b>make_a_note_while_ordering</b><br>Test class: com.travels.qa.testcases.TourConfirmation_Testcase</td>
+<td></td>
+<td>18</td>
+<td>com.travels.qa.testcases.TourConfirmation_Testcase@4566e5bd</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.CarsInvoice_Testcase.payement_on_arrival()'><b>payement_on_arrival</b><br>Test class: com.travels.qa.testcases.CarsInvoice_Testcase</td>
+<td></td>
+<td>26</td>
+<td>com.travels.qa.testcases.CarsInvoice_Testcase@490ab905</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelInvoice_Testcase.payement_on_arrival()'><b>payement_on_arrival</b><br>Test class: com.travels.qa.testcases.HotelInvoice_Testcase</td>
+<td></td>
+<td>21</td>
+<td>com.travels.qa.testcases.HotelInvoice_Testcase@6e06451e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.TourInvoice_Testcase.payement_on_arrival()'><b>payement_on_arrival</b><br>Test class: com.travels.qa.testcases.TourInvoice_Testcase</td>
+<td></td>
+<td>19</td>
+<td>com.travels.qa.testcases.TourInvoice_Testcase@1ed4004b</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.CarsInvoice_Testcase.payment_Now()'><b>payment_Now</b><br>Test class: com.travels.qa.testcases.CarsInvoice_Testcase</td>
+<td></td>
+<td>36</td>
+<td>com.travels.qa.testcases.CarsInvoice_Testcase@490ab905</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelInvoice_Testcase.payment_Now()'><b>payment_Now</b><br>Test class: com.travels.qa.testcases.HotelInvoice_Testcase</td>
+<td></td>
+<td>43</td>
+<td>com.travels.qa.testcases.HotelInvoice_Testcase@6e06451e</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.TourInvoice_Testcase.payment_Now()'><b>payment_Now</b><br>Test class: com.travels.qa.testcases.TourInvoice_Testcase</td>
+<td></td>
+<td>37</td>
+<td>com.travels.qa.testcases.TourInvoice_Testcase@1ed4004b</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.CarsInvoice_Testcase.payment_on_arrival_when_SignedUp()'><b>payment_on_arrival_when_SignedUp</b><br>Test class: com.travels.qa.testcases.CarsInvoice_Testcase</td>
+<td></td>
+<td>24</td>
+<td>com.travels.qa.testcases.CarsInvoice_Testcase@490ab905</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HotelInvoice_Testcase.payment_on_arrival_when_SignedUp()'><b>payment_on_arrival_when_SignedUp</b><br>Test class: com.travels.qa.testcases.HotelInvoice_Testcase</td>
+<td></td>
+<td>27</td>
+<td>com.travels.qa.testcases.HotelInvoice_Testcase@6e06451e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.travels.qa.testcases.Tour_Testcase.Navigating_to_Tour_booking()'><b>Navigating_to_Tour_booking</b><br>Test class: com.travels.qa.testcases.Tour_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52993}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 4930107c2a8b8df8dd4c37fc15f781cc
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Tour_Testcase.setup(Tour_Testcase.java:29)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1189962374", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1189962374'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52993}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 4930107c2a8b8df8dd4c37fc15f781cc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Tour_Testcase.setup(Tour_Testcase.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Tour_Testcase@13805618</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Hotels_Testcase.Property_Checkbox_Filter()'><b>Property_Checkbox_Filter</b><br>Test class: com.travels.qa.testcases.Hotels_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51443}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: b0b098dd6b1751701559c2be6d2df903
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Hotels_Testcase.setup(Hotels_Testcase.java:31)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1487280607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1487280607'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:51443}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: b0b098dd6b1751701559c2be6d2df903
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Hotels_Testcase.setup(Hotels_Testcase.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Hotels_Testcase@59494225</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.Tour_Testcase.Tour_Filter()'><b>Tour_Filter</b><br>Test class: com.travels.qa.testcases.Tour_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52993}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 4930107c2a8b8df8dd4c37fc15f781cc
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Tour_Testcase.setup(Tour_Testcase.java:29)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1069700397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1069700397'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52993}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: 4930107c2a8b8df8dd4c37fc15f781cc
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.Tour_Testcase.setup(Tour_Testcase.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.travels.qa.testcases.Tour_Testcase@13805618</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.hotels_placard_handling()'><b>hotels_placard_handling</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49421}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: e9451c0e6c1840ae98952d334871f556
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.HomePage_Testcase.setup(HomePage_Testcase.java:34)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace927675315", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace927675315'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49421}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: e9451c0e6c1840ae98952d334871f556
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.HomePage_Testcase.setup(HomePage_Testcase.java:34)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+<tr>
+<td title='com.travels.qa.testcases.HomePage_Testcase.offer_placards_handling()'><b>offer_placards_handling</b><br>Test class: com.travels.qa.testcases.HomePage_Testcase</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49421}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: e9451c0e6c1840ae98952d334871f556
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.HomePage_Testcase.setup(HomePage_Testcase.java:34)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1729461819", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1729461819'><pre>org.openqa.selenium.TimeoutException: timeout
+  (Session info: chrome=69.0.3497.92)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.15063 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
+System info: host: &apos;GIND04LX6R5G5Q2&apos;, ip: &apos;10.242.76.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.41.578737 (49da6702b16031..., userDataDir: C:\Users\10263638\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49421}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.92, webStorageEnabled: true}
+Session ID: e9451c0e6c1840ae98952d334871f556
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at com.travels.qa.base.TestBase.initialization(TestBase.java:92)
+	at com.travels.qa.testcases.HomePage_Testcase.setup(HomePage_Testcase.java:34)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.travels.qa.testcases.HomePage_Testcase@56ac3a89</td></tr>
+</table><p>
+</body>
+</html>

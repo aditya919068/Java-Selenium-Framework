@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Aditya Automation]">
+  <test thread-count="5" name="Aditya Test(failed)">
+    <classes>
+      <class name="com.travels.qa.testcases.HomePage_Testcase">
+        <methods>
+          <include name="offer_placards_handling"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+          <include name="setUp"/>
+          <include name="hotels_placard_handling"/>
+          <include name="teardown"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.travels.qa.testcases.HomePage_Testcase -->
+      <class name="com.travels.qa.testcases.TourInvoice_Testcase">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+          <include name="setUp"/>
+          <include name="payment_on_arrival_when_SignedUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.travels.qa.testcases.TourInvoice_Testcase -->
+      <class name="com.travels.qa.testcases.Hotels_Testcase">
+        <methods>
+          <include name="Property_Checkbox_Filter"/>
+          <include name="getResult"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.travels.qa.testcases.Hotels_Testcase -->
+      <class name="com.travels.qa.testcases.HotelBooking_Testcase">
+        <methods>
+          <include name="setup"/>
+          <include name="Booking_Modification"/>
+          <include name="getResult"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.travels.qa.testcases.HotelBooking_Testcase -->
+      <class name="com.travels.qa.testcases.Tour_Testcase">
+        <methods>
+          <include name="Navigating_to_Tour_booking"/>
+          <include name="getResult"/>
+          <include name="setup"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="Tour_Filter"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.travels.qa.testcases.Tour_Testcase -->
+      <class name="com.travels.qa.testcases.CarsConfirmation_Testcase">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="getResult"/>
+          <include name="setUp"/>
+          <include name="booking_as_a_guest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.travels.qa.testcases.CarsConfirmation_Testcase -->
+    </classes>
+  </test> <!-- Aditya Test(failed) -->
+</suite> <!-- Failed suite [Aditya Automation] -->
